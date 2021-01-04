@@ -10,7 +10,7 @@ namespace Four_in_a_row.Cpu
     {
         public static IMoveEstimator CreateMoveEvaluator(GameSetting settning)
         {
-            return new SimpleMoveEstimator(settning, new SimpleBoardEvaluator(settning), new SimpleMoveNominator(settning), Constant.MaxEstimateDepth, 2000);
+            return new SimpleMoveEstimator(settning, new SimpleBoardEvaluator(settning), new SimpleMoveNominator(settning), Constant.MaxEstimateDepth);
         }
     }
 }
